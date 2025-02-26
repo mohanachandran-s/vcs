@@ -61,6 +61,6 @@ jobs:
       - name: Upload binaries and their SHA to Github Release
         uses: alexellis/upload-assets@0.4.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           asset_paths: '["./.build/dist/bin/wallet-cli*"]'
